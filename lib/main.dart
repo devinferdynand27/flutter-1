@@ -1,5 +1,10 @@
 import 'package:belajar/colum_widget.dart';
 import 'package:belajar/container_widget.dart';
+import 'package:belajar/gridview/fullscren_grid.dart';
+import 'package:belajar/gridview/grid_basic.dart';
+import 'package:belajar/gridview/grid_builder.dart';
+import 'package:belajar/gridview/grid_count.dart';
+import 'package:belajar/gridview/latihan_grid.dart';
 import 'package:belajar/latihan1.dart';
 import 'package:belajar/latihan2.dart';
 import 'package:belajar/latihan3.dart';
@@ -34,7 +39,7 @@ class Myapp extends StatelessWidget {
             ),
           ),
         ),
-        body: Latihan4(),
+        body: LatihanGrid(),
       ),
     );
   }
