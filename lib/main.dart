@@ -14,6 +14,10 @@ import 'package:belajar/listview/list_sparated.dart';
 import 'package:belajar/listview/listbasic.dart';
 import 'package:belajar/row_column.dart';
 import 'package:belajar/row_widget.dart';
+import 'package:belajar/screens/home_screen.dart';
+import 'package:belajar/screens/menu_screen.dart';
+import 'package:belajar/screens/second_screen.dart';
+import 'package:belajar/screens/thrid_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,19 +32,12 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "BlackPink Squad ",
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: Colors.black,
-          title: Text(
-            "Belajar Flutter",
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-        ),
-        body: LatihanGrid(),
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => NavigationMenu(),
+        '/second': (context) => SecondScreen(),
+        '/thrid': (context) => ThridScreen(),
+      },
     );
   }
 }
