@@ -1,4 +1,5 @@
 import 'package:belajar/screens/home_screen.dart';
+import 'package:belajar/screens/input_form.dart';
 import 'package:belajar/screens/list_screen.dart';
 import 'package:belajar/screens/second_screen.dart';
 import 'package:belajar/screens/thrid_screen.dart';
@@ -16,7 +17,7 @@ class _NavigationMenuState extends State<NavigationMenu> {
   List _pages = [
     HomeScreen(),
     ListScreen(),
-    ThridScreen(),
+    BelajarForm(),
   ];
   _changetab(int index) {
     setState(() {
